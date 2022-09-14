@@ -52,8 +52,14 @@ Copy the values from `src/main/resources/application.properties` and delete the 
 
 ## Run Vault
 
+Pull the Vault image.
+
 ```shell
 docker pull vault
+```
+Run a container, make sure to replace `{hostPath}` with a local directory path, such as `/tmp/vault`:
+
+```shell
 docker run --cap-add=IPC_LOCK \
 -e 'VAULT_DEV_ROOT_TOKEN_ID=00000000-0000-0000-0000-000000000000' \
 -p 8200:8200 \
@@ -61,10 +67,14 @@ docker run --cap-add=IPC_LOCK \
 --name my-vault vault
 ```
 
-Store the secrets, using the values returned before from Okta CLI.
+Open an interactive terminal with Vault:
 
 ```shell
 docker exec -it my-vault /bin/sh
+```
+In the terminal, store the secrets by executing the following code. Replace with the values returned by Okta CLI.
+
+```shell
 export VAULT_TOKEN="00000000-0000-0000-0000-000000000000"
 export VAULT_ADDR="http://127.0.0.1:8200"
 vault kv put secret/vault-demo-app,dev \
