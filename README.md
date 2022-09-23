@@ -1,6 +1,8 @@
 # Tutorial: Secure Secrets With Spring Cloud Config and Vault
 
-This repository contains all the code for testing a Spring Cloud Configuration Server using Vault as backend, and a demo client application with Okta OIDC authentication and Spring Boot 2.7.3.
+This repository contains all the code for testing a Spring Cloud Configuration Server using Vault as backend, and a demo client application with Okta OIDC authentication.
+
+Please read [Secure Secrets With Spring Cloud Config and Vault](https://developer.okta.com/blog/2022/10/01/spring-vault) to see how this app was created.
 
 **Prerequisites:**
 
@@ -10,11 +12,18 @@ This repository contains all the code for testing a Spring Cloud Configuration S
 - [HTTPie 3.2.1](https://httpie.io/docs/cli/installation)
 - [Vault 1.11.3](https://hub.docker.com/_/vault)
 
+> [Okta](https://developer.okta.com/) has Authentication and User Management APIs that reduce development time with instant-on, scalable user infrastructure. Okta's intuitive API and expert support make it easy for developers to authenticate, manage, and secure users and roles in any application.
+
+* [Getting Started](#getting-started)
+* [Links](#links)
+* [Help](#help)
+* [License](#license)
+
 ## Getting Started
 
 To install this example, run the following commands:
 ```bash
-git clone https://github.com/indiepopart/spring-vault-2.7.3.git
+git clone https://github.com/oktadev/okta-spring-vault-example.git
 ```
 
 ## Create the OIDC Application in Okta
@@ -99,4 +108,20 @@ SPRING_CLOUD_CONFIG_TOKEN=00000000-0000-0000-0000-000000000000 \
 ./mvnw spring-boot:run
 ```
 
-Got to http://localhost:8080 and login with Okta.
+Go to `http://localhost:8080` and log in with Okta.
+
+## Links
+
+This example uses the following libraries:
+
+* [HashiCorp Vault](https://www.vaultproject.io/)
+* [Okta Spring Boot Starter](https://github.com/okta/okta-spring-boot)
+* [Spring Cloud Config](https://spring.io/projects/spring-cloud-config)
+
+## Help
+
+Please post any questions as comments on the [blog post](https://developer.okta.com/blog/2022/10/01/spring-vault), or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also post a question to Stack Overflow with the ["okta" tag](https://stackoverflow.com/questions/tagged/okta).
+
+## License
+
+Apache 2.0, see [LICENSE](LICENSE).

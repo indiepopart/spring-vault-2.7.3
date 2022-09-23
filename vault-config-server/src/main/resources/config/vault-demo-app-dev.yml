@@ -1,5 +1,5 @@
 okta:
   oauth2:
-    issuer: https://dev-7678651.okta.com/oauth2/default
-    clientId: '{cipher}f3b118c0d0528c6def0aa91de2ba95eef3d8db8997ab25150862aac185552443e03dcc6d3f770cc4ff6c6701d2419e99'
-    clientSecret: '{cipher}d9c8721ff68949d2a35906d9c53776f9fe8a6ce32e29aa5f5a3c2f975513567c9809fc402458fc763871e6c346f0d510c0343d168b7741c5b905c93312bd7d68'
+    issuer: https://dev-17700857.okta.com/oauth2/default
+    clientId: '{cipher}f29bfd80a886f6806c7ffaf121dd57d4f4e3d564b7f61c60e440eacb4a939cbc28f3319ba17152aaa979f3ebe22b31e9'
+    clientSecret: '{cipher}3b924545113e34f86239def5750f5181183b08c569fcab2979bc535245da72cfd69535f1f1dddd3db476587f3cf043a40f6fa71b3b0cc9e67e5b4ce1d0ff6daf'
