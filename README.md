@@ -87,7 +87,6 @@ In the terminal, store the secrets by executing the following code. Replace with
 export VAULT_TOKEN="00000000-0000-0000-0000-000000000000"
 export VAULT_ADDR="http://127.0.0.1:8200"
 vault kv put secret/vault-demo-app,dev \
-vault kv put secret/vault-demo-app,dev \
 okta.oauth2.clientId="{yourClientId}" \
 okta.oauth2.clientSecret="{yourClientSecret}" \
 okta.oauth2.issuer="{yourIssuerURI}"
